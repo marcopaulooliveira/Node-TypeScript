@@ -1,0 +1,28 @@
+{
+  "name": "node-typescript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rm -R dist",
+    "watch": "tsc && nodemon --watch 'src/**/*' -e ts,tsx --exec 'ts-node' dist/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^13.9.1",
+    "concurrently": "^5.1.0",
+    "nodemon": "^2.0.2",
+    "sync-glob": "^1.4.0",
+    "ts-node": "^8.6.2",
+    "typescript": "^3.8.3"
+  },
+  "dependencies": {
+    "fastify": "^2.12.1",
+    "fastify-autoload": "^1.2.2",
+    "fastify-blipp": "^2.1.0",
+    "fastify-helmet": "^3.0.2",
+    "fastify-plugin": "^1.6.1"
+  }
+}
